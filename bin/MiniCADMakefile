@@ -1,0 +1,25 @@
+JC = javac
+JVM = java
+CLASSES = \
+	Canvas.java \
+	Circle.java \
+	Desenator.java \
+	Diamond.java \
+	Line.java \
+	Polygon.java \
+	ReadInput.java \
+	Rectangle.java \
+	Shape.java \
+	ShapeFactory.java \
+	Square.java \
+	Triangle.java \
+	Visitor.java \
+	Main.java
+
+build:	$(CLASSES: .java = .class)
+	$(JC) $(CLASSES)
+clean:
+	rm -rf *.class
+
+                                                   
+

@@ -1,0 +1,29 @@
+JFLAGS = -g
+JC = -javac
+.SUFFIXES: .java .class
+.java.class:
+BUILD = \
+        Canvas.java \
+        Circle.java \
+        Desenator.java \
+        Diamond.java \
+        Line.java \
+        Polygon.java \
+        ReadInput.java \
+        Rectangle.java \
+        Shape.java \
+        ShapeFactory.java \
+        Square.java \
+        Trinagle.java \
+        Visitor.java \
+        Main.java
+
+default: build
+
+build: $(BUILD: .java=.class)
+
+clean:
+        $(RM) *.class
+
+                                                   
+
